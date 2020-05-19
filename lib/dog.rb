@@ -17,6 +17,10 @@ class Dog
     all.each{|dog| puts dog}
   end
   
+  def clear_all
+    all.clear
+  end
+  
 
 
 
