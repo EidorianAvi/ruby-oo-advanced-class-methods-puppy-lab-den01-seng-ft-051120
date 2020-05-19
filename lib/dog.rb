@@ -3,6 +3,8 @@
 class Dog 
   @@all = []
   
+  attr_reader :name
+  
   def initialize name 
     @name = name 
     
@@ -14,7 +16,7 @@ class Dog
   end
   
   def self.print_all
-    all.each{|dog| puts dog}
+    all.each{|dog| puts dog.name}
   end
   
   def self.clear_all
